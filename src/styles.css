@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.home{
+  background-image: url("https://ak5.picdn.net/shutterstock/videos/32781985/thumb/1.jpg");
+  background-color: white;
+  background-size: cover;
+  background-attachment: initial;
+  background-repeat: no-repeat;
+}
