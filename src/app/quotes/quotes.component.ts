@@ -10,17 +10,31 @@ export class QuotesComponent implements OnInit {
   quotes: Quotes[] = [
     new Quotes(
       1,
-      "What is good is not easy",
+      "What is good is not easy and what is not easy is worth every struggle",
       "Shee",
       "Anonymous",
-      new Date(2018, 3, 17)
+      new Date(2019, 3, 17)
     ),
     new Quotes(
       2,
       "Never underestimate the power of a touch and a kind word",
       "Shiku",
       "Herman",
-      new Date(2018, 0, 12)
+      new Date(2019, 0, 12)
+    ),
+    new Quotes(
+      2,
+      "No human is limited",
+      "Kipchoge",
+      "Marion",
+      new Date(2019,1,23)
+    ),
+    new Quotes(
+      3,
+      "A person is a person no matter how small",
+      "Bob collymore",
+      "Wambui Collymore",
+      new Date(2019, 3, 12)
     )
   ];
 
@@ -45,8 +59,12 @@ export class QuotesComponent implements OnInit {
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
-    quote.completeDate = new Date(quote.completeDate)
-    this.quotes.push(quote)
+    console.log(quote);
+    
+    // quote.completeDate = new Date(quote.completeDate)
+    // this.quotes.push(quote)
+    // console.log(this.quotes);
+    
   }
   constructor() {}
 
