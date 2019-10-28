@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
 .home{
-  background-image: url("https://ak5.picdn.net/shutterstock/videos/32781985/thumb/1.jpg");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhF8OCvwEt_rG6aTqqDDi57rwZdWY9ZbWm0XlNPjbVgcO9asu&s");
   background-color: white;
   background-size: cover;
   background-attachment: initial;

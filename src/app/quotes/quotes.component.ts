@@ -7,7 +7,7 @@ import { Quotes } from "../quotes";
   styleUrls: ["./quotes.component.css"]
 })
 export class QuotesComponent implements OnInit {
-  quote: Quotes[] = [
+  quotes: Quotes[] = [
     new Quotes(
       1,
       "What is good is not easy",
@@ -15,7 +15,13 @@ export class QuotesComponent implements OnInit {
       "Anonymous",
       new Date(2018, 3, 17)
     ),
-    new Quotes(1, 'Never underestimate the power of a touch and a kind word', 'Shiku', 'Herman', new Date(2018, 0,12))
+    new Quotes(
+      2,
+      "Never underestimate the power of a touch and a kind word",
+      "Shiku",
+      "Herman",
+      new Date(2018, 0, 12)
+    )
   ];
 
   constructor() {}
