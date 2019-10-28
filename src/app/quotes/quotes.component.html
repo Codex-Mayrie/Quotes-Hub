@@ -11,11 +11,11 @@
         <div *ngFor="let quote of quotes; let i = index">
           <div class="card-header">
             <h3 appHighlight class="text-transparent">{{ quote.name }}</h3>
-            <button (click)="(Details)" class="btn btn-info" id="button1">
+            <button (click)="toggleDetails()" class="btn btn-info" id="button1">
               Show Details
             </button>
             <app-quote-details
-              *ngIf="quotes.seeDetails"
+              *ngIf="quotes.showDetails"
               (isDelete)="deleteQuote($event, i)"
             >
             </app-quote-details>
