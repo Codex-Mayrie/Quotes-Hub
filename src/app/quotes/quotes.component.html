@@ -3,7 +3,7 @@
   <hr />
   <div class="row text-center">
     <div class="col-md-6">
-      <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
     <div class="col-md-6">
       <div class="Quotes">
@@ -11,10 +11,19 @@
         <div *ngFor="let quote of quotes; let i = index">
           <div class="card-header">
             <h3 appHighlight class="text-transparent">{{ quote.name }}</h3>
-            <button (click)="toggleDetails(i)" class="btn btn-info" id="button1">
+            <p>{{ quote.quote }}</p>
+            <button
+              (click)="toggleDetails(i)"
+              class="btn btn-info"
+              id="button1"
+            >
               Show Details
             </button>
-            <app-quote-details *ngIf="quotes.showDetails" (isDelete)="deleteQuote($event, i)" [quote]='quote'>
+            <app-quote-details
+              *ngIf="quote.showDetails"
+              (click)="deleteQuote($event, i)"
+              [quote]="quote"
+            >
             </app-quote-details>
           </div>
         </div>
