@@ -44,3 +44,6 @@ https://shee1998.github.io/Quotes-Hub/.
 
 ## License
  MIT LICENSE © 2019 Mary Mburu
+
+ ## Collaborate
+  To contribute on this project, reach me on Email[marywanjikumburu1@gmail.com] or contact me via slack[Shee].
