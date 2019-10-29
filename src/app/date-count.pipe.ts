@@ -13,7 +13,7 @@ export class DateCountPipe implements PipeTransform {
     var dateDifferenceSeconds = dateDifference*0.001;
     var dateCounter = Math.round(dateDifferenceSeconds/secondsInDay);
 
-    if (dateCounter > 1) {
+    if (dateCounter >= 1) {
       return dateCounter;
     }else{
       return 0;
