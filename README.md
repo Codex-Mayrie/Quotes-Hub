@@ -1,10 +1,18 @@
 ### Quotes
-# Author
+
+## Author
 Mary Mburu
-# Description
+
+## Description
 This project allows the user to add quote by use of a form and get to see the date, author and the person  who submitted. The user can also vote by liking or disliking the quote and even choose to delete
-# Date
+
+## Date
 29/10/2019
+
+## Technologies used
+Angular
+Typescript
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
 ## Development server
@@ -30,7 +38,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# Live link to the project
+
+## Live link to the project
 https://shee1998.github.io/Quotes-Hub/.
-# License
+
+## License
  MIT LICENSE © 2019 Mary Mburu
