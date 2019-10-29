@@ -1,0 +1,16 @@
+.up{
+  margin-right: 30px;
+  background-color: white;
+  color:olivedrab;
+  font-size:25px;
+}
+.down{
+  margin-right: 10px;
+  background-color: white;
+  color:goldenrod;
+  font-size:25px;
+}
+.delete{
+  font-size:25px;
+  background-color: white;
+}
