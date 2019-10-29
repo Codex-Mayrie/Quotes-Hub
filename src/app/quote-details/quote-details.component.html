@@ -1,7 +1,8 @@
 <p>Author: {{ quote.author }}</p>
 <p>Person Submitted: {{ quote.personSubmitted }}</p>
+<p>Quote: {{ quote.quote }}</p>
 <div>
-  Date: This quote was created in {{ quote.completeDate | dateCount }} days
+  Date: This quote was created in {{ quote.createdDate | dateCount }} days
 </div>
 <div class="votes">
   <span class="badge badge-pill badge-info up" (click)="upvotes()">

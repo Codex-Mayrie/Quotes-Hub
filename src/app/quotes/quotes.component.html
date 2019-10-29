@@ -1,4 +1,4 @@
-<h1 class="text-center text-black"> Welcome to Quotes Hub</h1>
+<h1 class="text-center text-white"> Welcome to Quotes Hub</h1>
 <div class="container">
   <hr />
   <div class="row text-center">
@@ -10,8 +10,8 @@
         <h2 class="text-black text-center">Various Quotes:</h2>
         <div *ngFor="let quote of quotes; let i = index">
           <div class="card-header">
-            <h3 appHighlight class="text-transparent">{{ quote.name }}</h3>
-            <p>{{ quote.quote }}</p>
+            <h2 appHighlight class="text-transparent"></h2><br>
+            <h3>{{ quote.name }}</h3>
             <button
               (click)="toggleDetails(i)"
               class="btn btn-info"
@@ -24,6 +24,8 @@
               (click)="deleteQuote($event, i)"
               [quote]="quote"
             >
+           
+            {{ quote.quote }}
             </app-quote-details>
           </div>
         </div>

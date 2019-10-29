@@ -13,6 +13,7 @@ export class QuotesComponent implements OnInit {
       "What is good is not easy and what is not easy is worth every struggle",
       "Shee",
       "Anonymous",
+      "Myquote",
       new Date(2019, 3, 17)
     ),
     new Quotes(
@@ -20,6 +21,7 @@ export class QuotesComponent implements OnInit {
       "Never underestimate the power of a touch and a kind word",
       "Shiku",
       "Herman",
+      "Myquote",
       new Date(2019, 0, 12)
     ),
     new Quotes(
@@ -27,6 +29,7 @@ export class QuotesComponent implements OnInit {
       "No human is limited",
       "Kipchoge",
       "Marion",
+      "myQuote",
       new Date(2019, 1, 23)
     ),
     new Quotes(
@@ -34,6 +37,7 @@ export class QuotesComponent implements OnInit {
       "A person is a person no matter how small",
       "Bob collymore",
       "Wambui Collymore",
+      "Myquote",
       new Date(2019, 3, 12)
     )
   ];
@@ -53,17 +57,12 @@ export class QuotesComponent implements OnInit {
   toggleDetails(index) {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
-  // completeQuotes(isComplete, index) {
-  //   if (isComplete) {
-  //     this.quotes.splice(index, 1);
-  //   }
-  // }
+
   addNewQuote(quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
     console.log(quote);
 
-    // quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote);
     console.log(this.quotes);
   }
