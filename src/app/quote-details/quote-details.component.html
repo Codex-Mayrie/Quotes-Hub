@@ -2,8 +2,8 @@
 <p>Author: {{ quote.author }}</p>
 <p>Person Submitted: {{ quote.personSubmitted }}</p>
 <p>Date: This quote will be complete in {{ quote.completeDate | dateCount }} days</p>
-<button (click)='upvotes()'>Upvote {{quote.upvotes}}</button>
-<button (click)='downvotes()'>Downvote {{quote.downvotes}}</button>
+<button (click)='upvotes()'>Upvote {{quote.upvotes}}</button><br>
+<button (click)='downvotes()'>Downvote {{quote.downvotes}}</button><br><br>
 <button (click)="quoteDelete(true)" class="btn btn-outline-danger">
   Delete Quote
 </button>

@@ -1,12 +1,12 @@
 <h1 class="text-center">Quotes Hub</h1>
-<div class="container-fluid">
+<div class="container">
   <hr />
   <div class="row text-center">
     <div class="col-md-6">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
-    <div class="col-md-6">
-      <div class="Quotes">
+    <div class="col-md-6" >
+      <div class="Quotes" class="card p-5">
         <h3 class="text-white text-center">Various Quotes:</h3>
         <div *ngFor="let quote of quotes; let i = index">
           <div class="card-header">
