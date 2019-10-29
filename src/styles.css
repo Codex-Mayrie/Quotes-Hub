@@ -7,3 +7,6 @@
   background-repeat: no-repeat;
   background-image: url("https://images.all-free-download.com/images/graphicthumb/sky_with_cloud_background_192378.jpg");
 }
+body{
+  scroll-behavior: smooth;
+}
