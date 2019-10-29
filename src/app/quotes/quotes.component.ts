@@ -53,11 +53,11 @@ export class QuotesComponent implements OnInit {
   toggleDetails(index) {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
-  completeQuotes(isComplete, index) {
-    if (isComplete) {
-      this.quotes.splice(index, 1);
-    }
-  }
+  // completeQuotes(isComplete, index) {
+  //   if (isComplete) {
+  //     this.quotes.splice(index, 1);
+  //   }
+  // }
   addNewQuote(quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;

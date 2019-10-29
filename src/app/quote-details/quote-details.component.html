@@ -1,9 +1,23 @@
-
 <p>Author: {{ quote.author }}</p>
 <p>Person Submitted: {{ quote.personSubmitted }}</p>
-<p>Date: This quote will be complete in {{ quote.completeDate | dateCount }} days</p>
-<button class="up" (click)='upvotes()'>Upvote {{quote.upvotes}}</button>
-<button class="down" (click)='downvotes()'>Downvote {{quote.downvotes}}</button><br><br>
-<button class="delete" (click)="quoteDelete(true)" class="btn btn-outline-danger">
-  Delete Quote
-</button>
+<div>
+  Date: This quote will be complete in {{ quote.completeDate | dateCount }} days
+</div>
+<div class="votes">
+  <span class="badge badge-pill badge-info up" (click)="upvotes()">
+    👍 {{ quote.upvotes }}
+  </span>
+  <span class="badge badge-pill badge-danger down" (click)="downvotes()">
+    👎 {{ quote.downvotes }}</span
+  ><br /><br />
+</div>
+<hr />
+<div class="col-md-12">
+  <button
+    class="badge badge-pill delete"
+    (click)="quoteDelete(true)"
+    class="btn btn-outline-danger"
+  >
+    Delete Quote
+  </button>
+</div>
